@@ -1,0 +1,39 @@
+.empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: var(--spacing-3xl) var(--spacing-lg);
+      text-align: center;
+    }
+    
+    .empty-state-icon {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      color: var(--gray-300);
+      background-color: var(--gray-100);
+      border-radius: 50%;
+      margin-bottom: var(--spacing-xl);
+    }
+    
+    .empty-state-title {
+      font-size: var(--text-2xl);
+      font-weight: var(--weight-bold);
+      color: var(--gray-700);
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .empty-state-message {
+      font-size: var(--text-base);
+      color: var(--gray-500);
+      max-width: 400px;
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .empty-state-action {
+      margin-top: var(--spacing-md);
+    }

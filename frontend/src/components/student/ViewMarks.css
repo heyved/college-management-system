@@ -1,0 +1,129 @@
+.view-marks {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    
+    .performance-overview {
+      margin-bottom: var(--spacing-xl);
+    }
+    
+    .performance-stats {
+      padding: var(--spacing-xl);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-lg);
+    }
+    
+    .stat-card {
+      padding: var(--spacing-xl);
+      background: linear-gradient(135deg, var(--gray-100) 0%, var(--gray-50) 100%);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .stat-card.primary {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--bright-blue) 100%);
+      color: var(--white);
+    }
+    
+    .stat-label {
+      display: block;
+      font-size: var(--text-sm);
+      margin-bottom: var(--spacing-sm);
+      opacity: 0.8;
+    }
+    
+    .stat-card.primary .stat-label {
+      color: var(--white);
+    }
+    
+    .stat-value {
+      display: block;
+      font-size: var(--text-3xl);
+      font-weight: var(--weight-bold);
+    }
+    
+    .semester-filter {
+      margin-bottom: var(--spacing-xl);
+      padding: var(--spacing-lg);
+    }
+    
+    .filter-buttons {
+      display: flex;
+      gap: var(--spacing-md);
+      flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border: 2px solid var(--gray-300);
+      background-color: var(--white);
+      color: var(--gray-700);
+      border-radius: var(--radius-full);
+      font-weight: var(--weight-medium);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    
+    .filter-btn:hover {
+      border-color: var(--primary-blue);
+      color: var(--primary-blue);
+    }
+    
+    .filter-btn.active {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--bright-blue) 100%);
+      color: var(--white);
+      border-color: var(--primary-blue);
+    }
+    
+    .semester-summary {
+      margin-top: var(--spacing-xl);
+    }
+    
+    .summary-content {
+      padding: var(--spacing-xl);
+    }
+    
+    .summary-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-lg);
+    }
+    
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      padding: var(--spacing-md);
+      background-color: var(--gray-100);
+      border-radius: var(--radius-md);
+    }
+    
+    .summary-item span {
+      color: var(--gray-600);
+    }
+    
+    .summary-item strong {
+      color: var(--gray-900);
+      font-size: var(--text-lg);
+    }
+    
+    .summary-item .highlight {
+      color: var(--primary-blue);
+      font-size: var(--text-2xl);
+    }
+    
+    @media (max-width: 768px) {
+      .performance-stats,
+      .summary-stats {
+        grid-template-columns: 1fr;
+      }
+    
+      .filter-buttons {
+        justify-content: center;
+      }
+    }

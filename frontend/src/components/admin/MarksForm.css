@@ -1,0 +1,21 @@
+.calculated-info {
+      padding: var(--spacing-md);
+      background-color: var(--gray-100);
+      border-radius: var(--radius-md);
+    }
+    
+    .calc-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .calc-item span {
+      color: var(--gray-600);
+      font-size: var(--text-sm);
+    }
+    
+    .calc-item strong {
+      font-size: var(--text-xl);
+      color: var(--primary-blue);
+    }

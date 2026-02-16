@@ -1,0 +1,66 @@
+.faculty-form-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .credentials-modal {
+      max-width: 600px;
+    }
+    
+    .credentials-info {
+      padding: var(--spacing-md);
+    }
+    
+    .credentials-message {
+      padding: var(--spacing-md);
+      background-color: rgba(255, 193, 7, 0.1);
+      border-left: 4px solid var(--warning);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--spacing-lg);
+      color: var(--gray-700);
+      line-height: 1.6;
+    }
+    
+    .credentials-box {
+      padding: var(--spacing-xl);
+      background: linear-gradient(135deg, var(--gray-100) 0%, var(--gray-50) 100%);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--spacing-lg);
+      border: 2px solid var(--primary-blue);
+    }
+    
+    .credential-item {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-xs);
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .credential-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .credential-item label {
+      font-size: var(--text-sm);
+      color: var(--gray-600);
+      font-weight: var(--weight-medium);
+    }
+    
+    .credential-item strong {
+      font-size: var(--text-lg);
+      color: var(--gray-900);
+      font-family: var(--font-mono);
+      padding: var(--spacing-sm);
+      background-color: var(--white);
+      border-radius: var(--radius-sm);
+    }
+    
+    .password-text {
+      color: var(--primary-blue);
+      font-weight: var(--weight-bold);
+    }
+    
+    .btn-block {
+      width: 100%;
+      justify-content: center;
+    }

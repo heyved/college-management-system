@@ -1,0 +1,11 @@
+.manage-courses {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    
+    .enrollment-info {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xs);
+      font-weight: var(--weight-medium);
+      color: var(--gray-700);
+    }

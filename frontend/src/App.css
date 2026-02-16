@@ -1,0 +1,36 @@
+.App {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Toast Customization */
+    .Toastify__toast {
+      font-family: var(--font-sans);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .Toastify__toast--success {
+      background-color: var(--success);
+    }
+    
+    .Toastify__toast--error {
+      background-color: var(--danger);
+    }
+    
+    .Toastify__toast--warning {
+      background-color: var(--warning);
+    }
+    
+    .Toastify__toast--info {
+      background-color: var(--info);
+    }
+    
+    .Toastify__progress-bar {
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0.8) 100%
+      );
+    }
